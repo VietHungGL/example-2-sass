@@ -1,0 +1,107 @@
+.ourteam
+  width: 100%
+  height: auto
+.ourteam-list
+  display: flex
+  flex-direction: column
+  padding-top: 100px
+  padding-bottom: 100px
+  gap: .3rem 0
+.ourteam-title
+  text-align: center
+  h3
+    font-size: 35px
+    font-weight: 600
+    color: #000
+    line-height: 2
+    text-transform: uppercase
+    span
+      color: $button-color
+  p
+    font-size: 16px
+    font-weight: 400
+    color: #000
+    line-height: 2
+.ourteam-image
+  display: flex
+  .ourteam-image-item
+    width: 24%
+    height: auto
+    text-align: center
+    transition: all .3s
+    cursor: pointer
+    opacity: 0.5
+    margin-left: .1rem
+    padding: .5rem 0
+    &:hover
+      transform: scale(1.1)
+      transition: all .3s 
+      opacity: 1
+    .img-1
+      transition: all .3s
+      cursor: pointer
+      opacity: 0.5
+      &:hover
+        transform: scale(1.1)
+        transition: all .3s  
+        border-bottom: 4px solid $button-color
+        background-color: transparent
+        opacity: 1
+    .img-2
+      width: 236px
+      height: auto
+      @extend .img-1
+    .img-3
+      @extend .img-1
+    .img-4
+      @extend .img-1
+    h3
+      font-size: 25px
+      font-weight: 600
+      color: #000
+      line-height: 2
+    p
+      font-size: 14px
+      font-weight: 400
+      color: #000
+      line-height: 2
+.ourteam-social
+  margin-top: 15px
+  margin-bottom: 15px
+  img
+    &:nth-child(2)
+      margin: 0 15px
+.slick-dots
+  position: absolute
+  display: flex !important
+  column-gap: 20px
+  justify-content: center
+  justify-items: center
+  bottom: 0
+  left: 50%
+  transform: translate(-50%, 50px)
+  button
+    font-size: 0.1px
+    width: 15px
+    height: 15px
+    border-radius: 100rem
+    background-color: #ccc
+    border: none
+    outline: none
+    cursor: pointer
+    transition: all .3s 
+    &:hover
+      transform: scale(1 1)
+      transition: all .3s
+      background-color: $button-color
+.slick-dots .slick-active button
+  background-color:$button-color 
+
++mobile 
+  .ourteam-title p
+    font-size: .16rem
+  .ourteam-image .ourteam-image-item h3
+    font-size: .25rem
+  .ourteam-image .ourteam-image-item p
+    font-size: .14rem
+   

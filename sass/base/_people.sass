@@ -1,0 +1,89 @@
+.people
+  width: 100%
+  background: url(../../assets/img/bg-2.png) top center / cover no-repeat
+  height: auto
+  object-fit: contain
+  min-width: 1180px
+  &::before
+    content: ""
+    width: 100%
+    height: auto
+    min-height: 500px
+    position: absolute
+    background-color: #3a424b
+    opacity: 0.8
+    min-width: 1180px
+.people-slider-list
+  .wrapper
+    position: relative
+    width: 1300px !important
+    &::before
+      content: ""
+      position: absolute
+      width: 20px
+      height: 40px
+      left: 0
+      background: url(../../assets/img/arrow_left.png) top center / cover no-repeat
+      top: 250px
+    &::after
+      content: ""
+      position: absolute
+      width: 20px
+      height: 40px
+      right: 0
+      background: url(../../assets/img/arrow_right.png) top center / cover no-repeat
+      top: 250px
+.people-item
+  text-align: center
+  padding-top: 140px
+  padding-bottom: 45px
+  img
+    margin-bottom: 20px
+  p
+    font-size: 16px
+    font-weight: 700
+    color: #cfcfd0
+    font-style: italic
+    line-height: 2
+  h3
+    font-size: 18px
+    font-weight: 800
+    color: #cfcfd0
+    font-style: italic
+    line-height: 6
+.slick-prev
+  padding: 15px 10px
+  position: absolute
+  z-index: 1
+  cursor: pointer
+  height: 40px
+  top: 60%
+  left: 16%
+  background: url(../../assets/img/arrow_left.png) top center / cover no-repeat
+.slick-next
+  padding: 15px 10px
+  position: absolute
+  z-index: 1
+  cursor: pointer
+  height: 40px
+  top: 60%
+  right: 16%
+  background: url(../../assets/img/arrow_right.png) top center / cover no-repeat
+
++mobile 
+  .people
+    min-width: unset
+  .people::before
+    min-width: unset
+  .people-item p
+    font-size: .16rem
+  .people-item h3
+    font-size: .18rem
+  .slick-prev
+    padding: .15rem .1rem
+    left: 6%
+    height: .4rem
+  .slick-next
+    padding: .15rem .1rem
+    right: 6%
+    height: .4rem

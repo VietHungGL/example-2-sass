@@ -1,0 +1,43 @@
+.footer
+  width: 100%
+  height: auto
+  background: #3b434c
+  margin-top: -1px
+  min-width: max-content
+.footer-list
+  padding: .5rem 0
+  display: flex
+  justify-content: space-between
+  align-items: center
+  a
+    font-size: 16px
+    font-weight: 400
+    line-height: 2
+    color: #fff
+.footer-item
+  display: flex
+  column-gap: 10px
+.btn-back-to-top
+    opacity: 0
+    transform: rotate(180deg)
+    right: 2vw
+    bottom: 5vh
+    position: fixed
+    cursor: pointer
+    width: 0.4rem
+    height: 0.4rem
+    background: url(../../assets/img/arrow_down.png)no-repeat center
+    background-color: #f7600e
+    border-radius: 50%
+    transition: all 0.2s linear
+.btn-back-to-top.active
+    bottom: 3vh
+    opacity: 0.6
++mobile 
+  .footer
+    min-width: unset
+  .footer-list a
+    font-size: .16rem
+    img
+      font-size: .16rem
+

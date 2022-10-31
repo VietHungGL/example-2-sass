@@ -1,0 +1,95 @@
+.sayhello
+  height: auto
+  width: 100%
+  background: url(../../assets/img/bg-3.png) top center / cover no-repeat
+  min-width: max-content
+.sayhello-title
+  text-align: center
+  h3
+    font-size: 35px
+    font-weight: 600
+    color: #fff
+    line-height: 2
+    text-transform: uppercase
+    padding-top: 100px
+    span
+      color: $button-color
+  p
+    font-size: 16px
+    font-weight: 400
+    color: #fff
+    line-height: 2
+    padding-bottom: 100px
+.sayhello-list
+  form
+    display: flex
+    flex-direction: column
+    width: 100%
+    align-items: center
+    justify-content: center
+    .column
+      width: 100%
+      display: flex
+      column-gap: 20px
+    .column-full
+      width: 100%
+      text-align: center
+      margin-top: 50px
+.form-contact-mess
+  border: 2px solid #FFF
+  background-color: #fff
+  padding: 15px 0 150px 30px
+  border-radius: 10px
+  width: 60%
+.hire-social
+  display: flex
+  width: 100%
+  margin-top: 50px
+  margin-bottom: 50px
+  justify-content: space-between
+  align-items: center
+  button
+    color: #fff
+    width: 25%
+    background-color: $button-color
+    padding: 25px 30px
+    border-radius: 10px
+    font-size: 16px
+    font-weight: 600
+    text-transform: uppercase
+    line-height: 1
+    cursor: pointer
+    &:hover
+      transform: scale(1.1)
+      transition: all 0.3s
+.hire-social-list
+  display: flex
+  column-gap: 30px
+  img
+    cursor: pointer
+    transition: all .3s
+    &:hover
+      transform: scale(1.1)
+      transition: all .3s
++mobile 
+  .sayhello
+     min-width: unset
+  .sayhello-title h3
+    font-size: .35rem
+    padding-top: 1rem
+  .sayhello-title p
+    font-size: .16rem
+    padding-bottom: 1rem
+  .hire-social
+    margin-top: .5rem
+    margin-bottom: .5rem
+    row-gap: .1rem
+    flex-direction: column
+  .hire-social-list
+    column-gap: .3rem
+  .hire-social button
+    width: 50%
+    font-size: .16rem
+    padding: .2rem .3rem
+  .sayhello-list form .column-full
+    margin-top: .5rem

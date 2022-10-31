@@ -1,0 +1,71 @@
+@charset "utf-8"
+@import  "variables"
+@import  "mixins"
+
+body
+  line-height: 1
+  font-family: $font
+  font-size: 16px
+  color: $text-color
+
+.container
+  max-width: 2000px
+  height: auto
+
+.wrapper
+  width: 1170px
+  margin: 0 auto
+  padding-left: 20px
+  padding-right: 20px
+
+.bnt
+  padding: .12rem
+  font-size: .12rem
+  background-color: #3a424b
+  color: #fff
+.line
+  border: 1px solid #000
+.slick-slide img
+  display: inline-block !important
+.show-in-left
+  transform: translateX(0)
+.form-contact
+  border: 2px solid #FFF
+  background-color: #fff
+  padding: 15px 0 15px 30px
+  border-radius: 10px
+  width: 100%
+
++desktop
+  html
+    font-size: 625%
+
+  body
+    font-size: .14rem
+
+  .wrapper
+    margin-left: auto
+    margin-right: auto
+
+  .sm
+    display: none !important
+
+
++mobile
+
+  html
+    font-size: calc(100vw / 7.5)
+    min-height: 100vh
+
+  body
+    font-size: .28rem
+
+  .container
+    min-width: 320px
+
+  .wrapper
+    padding-left: .4rem
+    padding-right: .4rem
+
+  .md
+    display: none !important

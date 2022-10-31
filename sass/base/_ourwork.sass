@@ -1,0 +1,133 @@
+.ourwork
+  width: 100%
+  height: auto
+  padding-bottom: 100px
+.ourwork-list
+  h2
+    font-size: 35px
+    font-weight: 600
+    color: #000
+    line-height: 4
+    text-align: center
+    text-transform: uppercase
+    transform: translateY(37px)
+    letter-spacing: 3px
+    span
+      color: $button-color
+  p
+    font-size: 16px
+    font-weight: 400
+    line-height: 2
+    text-align: center
+    padding-bottom: 100px
+.ourwork-image
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  grid-template-rows: 1fr 1fr
+  row-gap: 25px
+  column-gap: 20px
+  cursor: pointer
+.ourwork-item
+  position: relative
+.our-notify
+  display: none
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  opacity: 0.9
+  position: absolute
+  background-color: $button-color
+  border-radius: 10px
+  transform-origin: calc(100% - 20px ) bottom
+  animation: ourNotify ease-in 0.3s
+.our-notify-list
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin: 70px 0
+  row-gap: 15px
+  text-align: center
+  h3
+    font-size: 25px
+    font-weight: 600
+    color: #fff
+    text-transform: uppercase
+    line-height: 2
+  p
+    font-size: 14px
+    font-weight: 400
+    color: #fff
+    line-height: 2
+  a
+    background-color: #fff
+    line-height: 2
+    padding: 15px 30px
+    color: $button-color
+    text-transform: uppercase
+    border-radius: 10px
+    width: 80%
+    transition: all .3s
+    &:hover
+      transform: scale(1.1)
+      transition: all .3s
+@keyframes ourNotify
+  0%
+    opacity: 0
+    transform: scale(0)
+  100%
+    opacity: 0.7
+    transform: scale(1)
+.has-notify
+  &:hover .our-notify
+    display: block
+.uorwork-show
+  text-align: center
+  padding-top: 100px
+  .bnt
+    line-height: 4
+    font-size: 16px
+    font-weight: 600
+    padding: 10px 30px
+    border: 1px solid #ccc
+    border-radius: 10px
+    background-color: #fff
+    color: #3a424b
+    text-transform: uppercase
+    transition: all .3s
+    &:hover
+      background-color: $button-color
+      transform: scale(1.1)
+      transition: all .3s
+
++mobile 
+  .ourwork
+    padding-bottom: .5rem
+  .ourwork-list h2
+    font-size: .35rem
+    margin-bottom: .3rem
+  .ourwork-list p
+    font-size: .16rem
+  .ourwork-image
+    grid-template-columns: 1fr 1fr
+    row-gap: .25rem
+    column-gap: .2rem
+  .our-notify-list
+    margin: .5rem 0 
+  .our-notify-list h3
+    font-size: .25rem
+  .our-notify-list p
+    font-size: .14rem
+  .our-notify-list a
+    font-size: .27rem
+    padding: .15rem .3rem
+  .uorwork-show
+    padding-top: 0.5rem
+  .uorwork-show .bnt
+    font-size: .16rem
+    padding: .1rem .3rem
+
+
+        
+  
+
